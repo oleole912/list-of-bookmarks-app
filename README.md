@@ -1,3 +1,22 @@
+This is a web app that maintains a list of bookmarks (links).
+
+The user is able to add/edit/delete any link in the list as well as clear the whole list.
+
+The application displays a form on the top of the page that lets a user submit a link. The form validates whether the input is a valid URL.
+
+It displays the list of links with pagination so 20 links are shown per page.
+
+
+
+Technologies used:
+React, Redux
+
+Styled with:
+React Bootstrap
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
