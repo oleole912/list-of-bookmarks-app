@@ -16,7 +16,7 @@ export const editBookmark = (payload) => ({ type: "EDIT_BOOKMARK", payload });
 const bookmarksReducer = (statePart = [], action) => {
   switch (action.type) {
     case "ADD_BOOKMARK":
-      return [...statePart, { ...action.payload, id: shortid() }];
+      return [{ ...action.payload, id: shortid() }, ...statePart,];
     case "DELETE_BOOKMARK":
       return statePart.filter((bookmark) => bookmark.id !== action.payload);
     case "DELETE_ALL":
